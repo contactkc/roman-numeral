@@ -87,13 +87,12 @@ header {
 
 #converter__submit {
     height: 60px;
-    color: var(--dark-950);
+    color: var(--dark-800);
     background: none;
     border: 1px solid var(--dark-400);
     font-size: 1.2em;
     text-align: center;
     border-radius: 8px;
-    color: var(--dark-950);
     cursor: pointer;
     transition: 0.3s color, 0.3s background-color;
 }
@@ -101,6 +100,21 @@ header {
 #converter__submit:hover {
     background-color: var(--dark-950);
     color: var(--dark-base);
+}
+
+#converter__result {
+    margin: var(--margin-xxl);
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#converter__result::before {
+    text-transform: capitalize;
+    content: 'Converted Number: ';
+    font-weight: 500;
+    color: var(--dark-700);
+    border-bottom: 2px solid var(--dark-400);
 }
 
 .hidden {
